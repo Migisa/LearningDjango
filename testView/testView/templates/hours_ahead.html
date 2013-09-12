@@ -1,0 +1,10 @@
+{% extends "base_template.html" %}
+
+{% block title %} 
+	The current time
+{% endblock %}
+
+
+{% block content %}
+	<p> In {{hour_offset}} hours(s), it will be {{next_time}}.</p>
+{% endblock %}
