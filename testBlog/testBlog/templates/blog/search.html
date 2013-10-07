@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %}{{post.title}}{% endblock %}
+
+{% block content %}
+    <form action="/search/" method="get">
+        <input type="text" name="q">
+        <input type="submit" value="Search">
+    </form>	
+    
+    <p style = "color: red;"> {{ message }} </p>
+    <p> {{ post.content }} </p>
+    
+{% endblock %}

@@ -15,4 +15,7 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 	url(r'^polls/$', 'polls.views.index'),
+	url(r'^welcome/$', 'polls.views.welcome'),
+	url(r'^search-form/$', 'polls.views.search_form'),
+	url(r'^search/$', 'polls.views.search'),
 )

@@ -22,3 +22,10 @@ class Choice(models.Model):
 		return self.choice_text
 		
 		
+class randomObj(models.Model):
+	name = models.CharField(max_length = 20)
+	surname = models.CharField(max_length = 30)
+	
+	
+	def __unicode__(self):
+		return (self.name, self.surname)
